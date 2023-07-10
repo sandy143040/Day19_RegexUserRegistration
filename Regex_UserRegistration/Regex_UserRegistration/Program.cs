@@ -11,9 +11,9 @@ namespace Regex_UserRegistration
         static void Main(string[] args)
         {
             UserRegistration userRegistration = new UserRegistration();
-            Console.WriteLine("Enter Last Name");
-            string lName = Console.ReadLine();
-            userRegistration.LastName(lName);
+            Console.WriteLine("Enter Email id");
+            string input = Console.ReadLine();
+            userRegistration.EmailValidate(input);
 
             Console.ReadLine();
         }

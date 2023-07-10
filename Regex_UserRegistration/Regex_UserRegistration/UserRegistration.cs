@@ -9,16 +9,16 @@ namespace Regex_UserRegistration
 {
     public class UserRegistration
     {
-        public void LastName(string lName)
+        public void EmailValidate(string input)
         {
-            string lastName = "^[A-Z]{1}[a-z]{3,}?$";
-            if(Regex.IsMatch(lName, lastName))
+            string email = "^[a-zA-Z0-9/.]+[@][a-z]+[/.][a-z]{2,3}?$";
+            if(Regex.IsMatch(input, email))
             {
-                Console.WriteLine("Valid Last Name");
+                Console.WriteLine("Valid Email ID");
             }
             else
             {
-                Console.WriteLine("Invalid Last Name");
+                Console.WriteLine("Invalid Email ID");
             }
         }
     }
