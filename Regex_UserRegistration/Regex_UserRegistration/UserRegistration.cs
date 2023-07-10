@@ -9,16 +9,16 @@ namespace Regex_UserRegistration
 {
     public class UserRegistration
     {
-        public void FirstName(string fName)
+        public void LastName(string lName)
         {
-            string firstName = "^[A-Z]{1}[a-z]{3,}?$";
-            if(Regex.IsMatch(fName, firstName))
+            string lastName = "^[A-Z]{1}[a-z]{3,}?$";
+            if(Regex.IsMatch(lName, lastName))
             {
-                Console.WriteLine("Valid First Name");
+                Console.WriteLine("Valid Last Name");
             }
             else
             {
-                Console.WriteLine("Invallid First Name");
+                Console.WriteLine("Invalid Last Name");
             }
         }
     }
