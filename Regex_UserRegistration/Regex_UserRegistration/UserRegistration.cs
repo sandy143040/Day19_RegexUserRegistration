@@ -59,14 +59,16 @@ namespace Regex_UserRegistration
         }
         public void Password(string password)
         {
-            string pattern = "^[0-9A-Za-z@#$!%&]{8,}$";
+            //password should contain atleast 8 characters
+            //string pattern = "^[0-9A-Za-z@#$!%&]{8,}$";
+            string pattern = "^[A-Z]{1}[0-9A-Za-z@#$%&!]{8,}$";
             if (Regex.IsMatch(password, pattern))
             {
                 Console.WriteLine("Password is valid");
             }
             else
             {
-                Console.WriteLine("Invalid! password should contain atleast 8 characters.");
+                Console.WriteLine("Invalid Password!!");
             }
         }
     }
