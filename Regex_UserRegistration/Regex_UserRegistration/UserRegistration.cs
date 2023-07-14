@@ -45,5 +45,17 @@ namespace Regex_UserRegistration
                 Console.WriteLine("Email is Invalid");
             }
         }
+        public void PhoneNumber(String number)
+        {
+            string phoneNum = "^[0-9]{2}[ ][0-9]{10}$";
+            if (Regex.IsMatch(number, phoneNum))
+            {
+                Console.WriteLine("Valid Phone Number");
+            }
+            else
+            {
+                Console.WriteLine("Invalid Phone Number");
+            }
+        }
     }
 }
