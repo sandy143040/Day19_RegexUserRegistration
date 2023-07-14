@@ -57,5 +57,17 @@ namespace Regex_UserRegistration
                 Console.WriteLine("Invalid Phone Number");
             }
         }
+        public void Password(string password)
+        {
+            string pattern = "^[0-9A-Za-z@#$!%&]{8,}$";
+            if (Regex.IsMatch(password, pattern))
+            {
+                Console.WriteLine("Password is valid");
+            }
+            else
+            {
+                Console.WriteLine("Invalid! password should contain atleast 8 characters.");
+            }
+        }
     }
 }

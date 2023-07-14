@@ -18,6 +18,7 @@ namespace Regex_UserRegistration
                 Console.WriteLine("2.Validate Last Name");
                 Console.WriteLine("3.Validate Email Id:");
                 Console.WriteLine("4.Validate Mobile Number");
+                Console.WriteLine("5.Validate Password");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -40,6 +41,11 @@ namespace Regex_UserRegistration
                         Console.WriteLine("Enter Phone Number:");
                         string input = Console.ReadLine();
                         userRegistration.PhoneNumber(input);
+                        break;
+                    case 5:
+                        Console.WriteLine("Enter Password: ");
+                        string password = Console.ReadLine();   
+                        userRegistration.Password(password);
                         break;
                     default:
                         Console.WriteLine("Invalid Input");
